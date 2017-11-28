@@ -6,17 +6,43 @@
 // Ecrire une fonction 'hello' qui affiche dans la console "Hello World!"
 
 function hello() {
-	// write your code HERE
+	console.log("hello world");
 };
 
 // ----
 // écrire des fonctions suivante:
-// addition(a, b)
-// soustraction(a, b)
-// multiplication(a, b)
-// division(a, b)
-// concatenation(str1, str2)
-// moyenne(a1, a2, a3)
+   function addition (a, b) {
+   var addition = (a+b)
+   return addition;
+}
+return (addiction(5,10));
+
+
+   function soustraction (a, b) {
+   var soustraction = (a-b);
+   return soustraction;
+}   
+alert(soustraction(5,10));
+
+
+   function division(a, b) {
+   var division = (a/b);
+   return (division);
+}   
+alert(division(5,10));
+
+function concatenation (str1, str2) {
+
+return str1 + str2
+}      
+console.log(concatenation("salut","Farouk"));
+
+
+   function moyenne(a1, a2, a3) {
+   var a1 = 5;
+   var a2 = 12;
+
+}   
 
 // Chaque fonction devra effectuer l'opération correspondant à son nom, et renvoyer le résultat. 
 // Celui-ci sera stocké dans une variable, qui sera ensuite affichée dans la console
@@ -26,7 +52,30 @@ function hello() {
 // A l'aide d'une variable intermédiaire, inverser les deux valeurs pour que a ait pour valeur 12 et b pour valeur 5
 // Afficher le résultat de a et b dans la console sous la forme d'une phrase: "A vaut : xxx et B vaut yyy"
 var a, b;
-// WRITE YOUR CODE HERE
+var a = 5;
+var b = 12;
+var intermediaire = a; 
+a = b;
+b = intermediaire;
+	console.log("A vaut : " + a );
+	console.log("B vaut : " + b );
+
+console.log("a vaut " + a + " et b vaut " + b);
+
+function smurf2(obj) {
+	var intermediaire = obj.val1; 
+	obj.val1 = obj.val2;
+	obj.val2 = intermediaire;
+	console.log("A vaut : " + obj.val1 );
+	console.log("B vaut : " + obj.val2 );
+};
+var monObjet = {
+	val1: 5,
+	val2: 12
+};
+smurf2(monObjet);
+console.log(monObjet);
+
 
 // ----
 // Ecrire une fonction 'isDivisibleBy5' qui reçoit un nombre en paramètre, et qui vérifie que ce nombre est divisible par 5.
